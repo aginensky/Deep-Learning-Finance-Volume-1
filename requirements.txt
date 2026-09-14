@@ -1,0 +1,17 @@
+# Deep-Learning-Finance-Volume-1 dependencies
+#
+# PyTorch is pulled from the CPU wheel index so the project stays lean on
+# GPU-less machines (Cloud Agents run on CPU-only VMs). The "+cpu" local
+# version tag forces pip to resolve the wheel from download.pytorch.org.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+torch>=2.2
+numpy>=1.26
+pandas>=2.2
+scikit-learn>=1.4
+matplotlib>=3.8
+yfinance>=0.2.40
+
+# Interactive exploration
+jupyterlab>=4.0
+nbconvert>=7.0
